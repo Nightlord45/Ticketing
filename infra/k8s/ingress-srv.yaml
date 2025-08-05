@@ -17,3 +17,10 @@ spec:
                 port:
                   number: 3000
             pathType: ImplementationSpecific
+          - path: /?(.*)
+            backend:
+              service:
+                name: client-srv
+                port:
+                  number: 3000
+            pathType: ImplementationSpecific
